@@ -1,7 +1,7 @@
 import json
 
 def check_char_count(mystr):
-	
+	""" This is a docstring"""
 	assert isinstance(mystr, str), 'Input to this function should be a string'
 
 	if(len(mystr) == 2):
