@@ -1,0 +1,144 @@
+{
+  "animals": [
+    {
+      "head": "raven",
+      "body": "bat-rhino",
+      "arms": 10,
+      "legs": 12,
+      "tail": 22
+    },
+    {
+      "head": "snake",
+      "body": "thrush-yeti",
+      "arms": 2,
+      "legs": 12,
+      "tail": 14
+    },
+    {
+      "head": "bull",
+      "body": "tuna-teal",
+      "arms": 6,
+      "legs": 9,
+      "tail": 15
+    },
+    {
+      "head": "raven",
+      "body": "perch-ferret",
+      "arms": 4,
+      "legs": 9,
+      "tail": 13
+    },
+    {
+      "head": "raven",
+      "body": "stag-slug",
+      "arms": 4,
+      "legs": 3,
+      "tail": 7
+    },
+    {
+      "head": "raven",
+      "body": "panda-deer",
+      "arms": 10,
+      "legs": 12,
+      "tail": 22
+    },
+    {
+      "head": "snake",
+      "body": "hyena-dory",
+      "arms": 10,
+      "legs": 3,
+      "tail": 13
+    },
+    {
+      "head": "raven",
+      "body": "ibex-joey",
+      "arms": 4,
+      "legs": 9,
+      "tail": 13
+    },
+    {
+      "head": "lion",
+      "body": "guinea-crow",
+      "arms": 6,
+      "legs": 3,
+      "tail": 9
+    },
+    {
+      "head": "snake",
+      "body": "dog-swan",
+      "arms": 6,
+      "legs": 12,
+      "tail": 18
+    },
+    {
+      "head": "snake",
+      "body": "ocelot-civet",
+      "arms": 2,
+      "legs": 9,
+      "tail": 11
+    },
+    {
+      "head": "bunny",
+      "body": "marten-bison",
+      "arms": 10,
+      "legs": 6,
+      "tail": 16
+    },
+    {
+      "head": "raven",
+      "body": "civet-poodle",
+      "arms": 10,
+      "legs": 9,
+      "tail": 19
+    },
+    {
+      "head": "raven",
+      "body": "pika-lion",
+      "arms": 2,
+      "legs": 12,
+      "tail": 14
+    },
+    {
+      "head": "raven",
+      "body": "hermit-hog",
+      "arms": 6,
+      "legs": 3,
+      "tail": 9
+    },
+    {
+      "head": "bunny",
+      "body": "ghost-sponge",
+      "arms": 10,
+      "legs": 6,
+      "tail": 16
+    },
+    {
+      "head": "snake",
+      "body": "hornet-kit",
+      "arms": 6,
+      "legs": 6,
+      "tail": 12
+    },
+    {
+      "head": "lion",
+      "body": "kodiak-bass",
+      "arms": 2,
+      "legs": 12,
+      "tail": 14
+    },
+    {
+      "head": "snake",
+      "body": "jackal-tarpon",
+      "arms": 6,
+      "legs": 6,
+      "tail": 12
+    },
+    {
+      "head": "bunny",
+      "body": "newt-chimp",
+      "arms": 2,
+      "legs": 6,
+      "tail": 8
+    }
+  ]
+}

@@ -51,7 +51,7 @@ docker run --rm -v $PWD:/data -u $(id -u):$(id -g) hyeonseunglee/homework02:0.1 
 6. Run the following command to directly run `read_animals.py`
 
 ```bash
-docker run --rm -v $PWD:/data hyeoseunglee/homework02:0.1 read_animals.py /data/animals.json
+docker run --rm -v $PWD:/data hyeonseunglee/homework02:0.1 read_animals.py /data/animals.json
 ```
 
 ## Instructions on how to build an image with the Dockerfile provided
