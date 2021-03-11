@@ -1,7 +1,6 @@
 from flask import Flask
 import json
 import random
-import flask
 
 app = Flask(__name__)
 
@@ -15,21 +14,21 @@ def hello_name(name):
 
 @app.route('/animals',methods=['GET'])
 def get_animals():
-	return get_data()
+	return json.dumps(get_data())
 
-@app.route('/animals/head/<ani>',methods=['GET'])
-def get_heads(ani):
+@app.route('/animals/include_in_body/<ani>',methods=['GET'])
+def get_bodyanimal(ani):
 	test = get_data()
 	jsonList = test['animals']
-	output =[x for x in jsonList if x['head'] == ani]
-	return flask.jsonify(output)
+	output =[x for x in jsonList if ani in x['body']]
+	return json.dumps(output)
 
-@app.route('/animals/legs/<num>',methods=['GET'])
-def get_legs(num):
+@app.route('/animals/arms/<num>',methods=['GET'])
+def get_arms(num):
 	test = get_data()
 	jsonList = test['animals']
-	output =[x for x in jsonList if x['legs'] == int(num)]
-	return flask.jsonify(output)
+	output =[x for x in jsonList if x['arms'] == int(num)]
+	return json.dumps(output)
 
 @app.route('/animals/random',methods=['GET'])
 def get_random():
