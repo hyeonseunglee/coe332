@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+        name: partone
+        labels:
+                greeting: personalized
+spec:
+        containers:
+              - name: partone
+                image: ubuntu:18.04
+                command: ['sh', '-c', 'echo "Hello, $NAME!" && sleep 3600']
