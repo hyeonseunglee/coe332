@@ -22,7 +22,7 @@ spec:
       containers:
         - name: hslee21-test-flask
           imagePullPolicy: Always
-          image: homework06_web:latest 
+          image: hyeonseunglee/hw3 
           ports:
           - name: hslee21-flask
             containerPort: 5000

@@ -8,12 +8,10 @@ This is the README for the 6th homework assignment of COE 332 SP21.
 3. `hslee21-test-redis-service.yml `
 4. `hslee21-test-flask-deployment.yml`
 5. `hslee21-test-flask-service.yml`
-6. `web/animals_api.py` was modified by adding Option 2 from assignment descriptions.
 
-## Building an image
+## Image for this assignment
 
-1. Run `docker-compose build --no-cache` : build with `--no-cache` just to ensure that you are not referrecing any old images.
-2. Image name is `homework05_web`
+1. We are using the homework03 image `hyeonseunglee/hw3`.
  
 ## Step 1: Persistent Volume Claim
 
@@ -56,7 +54,7 @@ hslee21-test-redis   ClusterIP   10.103.217.46   <none>        6379/TCP         
 4. Output is
 ```
 NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
-hslee21-flask-deployment   0/2     2            0           55s
+hslee21-flask-deployment   2/2     2            0           55s
 hslee21-pvc-deployment     1/1     1            1           11m
 ```
 
