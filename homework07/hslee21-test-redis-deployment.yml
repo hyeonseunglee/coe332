@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hslee21-pvc-deployment
+  labels:
+    username: hslee21
+    env: test
+    app: hslee21-test-redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hslee21-test-redis
+  template:
+    metadata:
+      labels:
+        username: hslee21
+        env: test
+        app: hslee21-test-redis
+    spec:
+      containers:
+        - name: hslee21-test-redis
+          image: redis:5.0.0
+          volumeMounts:
+          - name: hslee21-pvc
+            mountPath: "/data"
+      volumes:
+      - name: hslee21-pvc
+        persistentVolumeClaim:
+          claimName: hslee21-pvc

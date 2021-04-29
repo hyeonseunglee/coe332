@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hslee21-hw7-flask-deployment
+  labels:
+    username: hslee21
+    env: test
+    app: hslee21-hw7-flask
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hslee21-hw7-flask
+  template:
+    metadata:
+      labels:
+        username: hslee21
+        env: test
+        app: hslee21-hw7-flask
+    spec:
+      containers:
+        - name: hslee21-hw7-flask
+          imagePullPolicy: Always
+          image: hyeonseunglee/flask-hw7 
+          ports:
+          - name: hw7-flask
+            containerPort: 5000
+          env:
+          - name: REDIS_IP
+            value: 10.111.94.157
+          command: ["python3","api.py"]

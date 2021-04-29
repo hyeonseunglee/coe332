@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hslee21-hw7-worker
+  labels:
+    app: hslee21-hw7-worker
+    username: hslee21
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hslee21-hw7-worker
+  template:
+    metadata:
+      labels:
+        app: hslee21-hw7-worker
+    spec:
+      containers:
+        - name: hslee21-hw7-worker
+          imagePullPolicy: Always
+          image: hyeonseunglee/flask-hw7
+          command: ["python","worker.py"]
+         ## command: ["sleep","999999999999"]
+          env:
+          - name: REDIS_IP
+            value: 10.111.94.157
+          - name: WORKER_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
